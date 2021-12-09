@@ -1,0 +1,51 @@
+.container{
+height: 100vh;
+display: flex;
+background-image: url("/img/KrZl8X.gif");
+background-repeat: no-repeat;
+background-size: cover;
+align-items: center;
+justify-content: center;
+}
+.ball{
+  
+}
+#askLabel{
+  color: whitesmoke;
+  text-align: center;
+  margin-left: 20%;
+  font-size: 3rem;
+}
+#askTextBox{
+margin-top: 20px;
+height: 60px;
+width: 600px;
+font-size: large;
+background-color: azure;
+color: grey
+
+}
+#askBtn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:45%;
+    padding: 0.25rem 0.5rem;
+    border: 3px solid #fefefe;
+    border-radius: 7px;
+    color: #fefefe;
+    background: rgba(0,0,0,0.6);
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+   
+}
+#askBtn:hover{
+  background: azure;
+  color: black;
+ 
+}
+
+.img{
+ height:400px;
+ margin-left:18%;
+}
