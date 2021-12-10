@@ -1,6 +1,5 @@
 const askText = document.querySelector("#askTextBox");
 const askBtn = document.querySelector("#askBtn");
-const answers = document.querySelector("#answers");
 
 const imgArray =[
 "img/magic8ball_1.png",
@@ -24,23 +23,17 @@ const imgArray =[
 "img/magic8ball_19.png",
 "img/magic8ball_20.png",
 ];
-console.log (imgArray)
-
-
-
 
 askBtn.addEventListener('click',changeImg);
 // // make a function to change the image
 function changeImg(){
-    //  if(answer != null){
-    //  answer.parentNode.removeChild(answer);
-    // }
-    
+       
     let random = Math.floor(Math.random()*imgArray.length);
     // the random # generated is then used to choose an image 
     selectedImage = imgArray[random]
     document.getElementById("image").src = `${selectedImage}`
-    
+}   
+
     // console.log (imgArray[random])
 
     // let img = document.createElement("img");
@@ -48,4 +41,8 @@ function changeImg(){
     // let src = document.getElementById("answers");
     // src.appendChild(img)
     // img.style.cssText= "height:400px; margin-left:18%";
-}
+
+
+
+
+
