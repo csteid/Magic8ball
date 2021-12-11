@@ -20,8 +20,10 @@ margin-top: 20px;
 height: 35px;
 width: 600px;
 font-size: large;
-background-color: azure;
-color: grey;
+background-color: rgb(18, 24, 24);
+color: white;
+border-radius: 10px;
+border-style: none;
 }
 
 #askBtn{
@@ -46,4 +48,16 @@ color: grey;
 #image{
  height:400px;
  margin-left:18%;
+ animation-name: spin;
+ animation-duration: 500ms;
+ animation-iteration-count: .00001ms;
+ animation-timing-function: linear; 
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }

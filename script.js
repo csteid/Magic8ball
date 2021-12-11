@@ -1,6 +1,5 @@
 const askText = document.querySelector("#askTextBox");
 const askBtn = document.querySelector("#askBtn");
-const form = document.querySelector("#ball");
 
 const imgArray =[
 "img/magic8ball_1.png",
