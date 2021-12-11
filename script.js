@@ -1,5 +1,6 @@
 const askText = document.querySelector("#askTextBox");
 const askBtn = document.querySelector("#askBtn");
+const form = document.querySelector("#ball");
 
 const imgArray =[
 "img/magic8ball_1.png",
@@ -30,9 +31,13 @@ function changeImg(){
        
     let random = Math.floor(Math.random()*imgArray.length);
     // the random # generated is then used to choose an image 
-    selectedImage = imgArray[random]
-    document.getElementById("image").src = `${selectedImage}`
+    selectedImage = imgArray[random];
+    document.getElementById("image").src = `${selectedImage}`;
+    setTimeout(function () {
+        location.reload(true); 
+    }, 3000);
 }   
+
 
     // console.log (imgArray[random])
 
