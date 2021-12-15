@@ -1,5 +1,6 @@
 const askText = document.querySelector("#askTextBox");
 const askBtn = document.querySelector("#askBtn");
+const text = document.querySelector("#addText");
 
 const imgArray =[
 "img/magic8ball_1.png",
@@ -25,26 +26,26 @@ const imgArray =[
 ];
 
 askBtn.addEventListener('click',changeImg);
-// // make a function to change the image
-function changeImg(){
-       
+// create a function to change the image
+function changeImg(){  
     let random = Math.floor(Math.random()*imgArray.length);
-    // the random # generated is then used to choose an image 
-    selectedImage = imgArray[random];
-    document.getElementById("image").src = `${selectedImage}`;
-    setTimeout(function () {
-        location.reload(true); 
-    }, 3000);
-}   
+      // the random # generated is then used to choose an image 
+     selectedImage = imgArray[random];
+      document.getElementById("image").src = `${selectedImage}`;
+    // clear text box and add question 
+     askText.remove();
+     askBtn.remove();
+    let setText = askText.value;
+      document.getElementById ("addText").innerHTML = `"${setText}"`;
+    // set 3 sec timer to clear the screen
+      setTimeout(function () {
+         location.reload(true); 
+      }, 3000);
+ }   
 
 
-    // console.log (imgArray[random])
 
-    // let img = document.createElement("img");
-    // img.src = imgArray[random];
-    // let src = document.getElementById("answers");
-    // src.appendChild(img)
-    // img.style.cssText= "height:400px; margin-left:18%";
+    
 
 
 
