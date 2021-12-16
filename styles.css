@@ -9,7 +9,7 @@ justify-content: center;
 text-align: center;
 }
 
-#askLabel, #addText{
+#askLabel, p{
   color: whitesmoke;
   font-size: 2rem;
   display: block;
