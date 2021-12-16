@@ -24,7 +24,8 @@ const imgArray =[
 "img/magic8ball_19.png",
 "img/magic8ball_20.png",
 ];
-
+const defaultImage = document.getElementById("image");
+defaultImage.src= "/img/magic8ball_start.png";
 askBtn.addEventListener('click',changeImg);
 // create a function to change the image
 function changeImg(){  
